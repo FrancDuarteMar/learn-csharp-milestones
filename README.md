@@ -48,19 +48,19 @@ Below is a list of tasks that correspond roughly to the "Take Action" sections o
 ## Chapter 1
 Getting to Know Your Environment (9–21)
 
-- [ ] ✏️ Open the reference manual for any component from inside Unity. Paste the link: **??**
-- [ ] ✏️ Find the button to jump to the scripting reference the any reference manual page. Paste the link: **??**
-- [ ] ✏️ Search for the `Strings` class in [Microsoft's C# documents](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/). Paste the link: **??**
+- [x] ✏️ Open the reference manual for any component from inside Unity. Paste the link: [Unity Documentation/ User Manual](https://docs.unity3d.com/2021.2/Documentation/Manual/UnityManual.html)
+- [x] ✏️ Find the button to jump to the scripting reference the any reference manual page. Paste the link: [Unity Scripting Manual](https://docs.unity3d.com/2021.2/Documentation/Manual/ScriptingSection.html)
+- [x] ✏️ Search for the `Strings` class in [Microsoft's C# documents](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/). Paste the link: [Microsoft C# Strings Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/)
 
 
 ## Chapter 2
 The Building Blocks of Programming (22–37)
 
-- [ ] Open the Unity project contained within this repo called "MilestonesProject"
-- [ ] Create Assets/Scripts/LearningCurve.cs
-	- [ ] Create C# variables with typeof `int`, `float`, `string`, and `bool`
-	- [ ] Add a single line, multi line, and summary comment to LearningCurve.cs
-	- [ ] Run the code in LearningCurve by attaching it to the Main Camera GameObject
+- [x] Open the Unity project contained within this repo called "MilestonesProject"
+- [x] Create Assets/Scripts/LearningCurve.cs
+	- [x] Create C# variables with typeof `int`, `float`, `string`, and `bool`
+	- [x] Add a single line, multi line, and summary comment to LearningCurve.cs
+	- [x] Run the code in LearningCurve by attaching it to the Main Camera GameObject
 
 
 ## Chapter 3
