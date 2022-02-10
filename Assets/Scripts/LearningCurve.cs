@@ -14,6 +14,7 @@ public class LearningCurve : MonoBehaviour
     public bool Student;
     private int YearsOfCollege = 4;
     public int YearsAtCollege;
+    [SerializeField] string CollegeName = "Davidson College";
 
     // Start is called before the first frame update
     void Start()
@@ -39,12 +40,12 @@ public class LearningCurve : MonoBehaviour
 
         if (isStudent)
         {
-            Statement += " and I am a student at Davidsn College!";
+            Statement += " and I am a student at "+ CollegeName + " !";
 
         }
         else
         {
-            Statement += " and I am NOT a student at Davidson College!";
+            Statement += " and I am NOT a student at " + CollegeName + " !";
         }
 
 
