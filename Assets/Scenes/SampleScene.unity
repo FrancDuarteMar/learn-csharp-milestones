@@ -314,6 +314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 042b6916f31ed4e11ac04330596c8ae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Age: 21
-  Name: Francisco
+  StudentAge: 21
+  StudentName: Francisco
   Student: 1
+  YearsAtCollege: 3

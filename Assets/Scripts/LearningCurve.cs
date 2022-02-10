@@ -9,35 +9,60 @@ public class LearningCurve : MonoBehaviour
      * My initial decalartion of variables. 
      * They all currently have my own information. 
      */
-    public int Age = 21;//My initial starting age! 
-    public string Name = "Francisco";
-    public bool Student = true;
+    public int StudentAge;//My initial starting age! 
+    public string StudentName;
+    public bool Student;
+    private int YearsOfCollege = 4;
+    public int YearsAtCollege;
+
     // Start is called before the first frame update
     void Start()
     {
-        StudentDebug();   
+        Debug.Log(StudentDebug(Student,StudentName, StudentAge));
+        Debug.Log(string.Format("I have {0} year/s left of college.", YearsUntilGraduation(YearsAtCollege)));
     }
-    /// <summary>
-    /// Prints the users name, age and whether they're a student
-    /// Davidson College or not
-    /// </summary>
-    void StudentDebug()
-    {
-        string Statement = " ";
-        Statement += "My name is " + Name + ". ";
-        Statement += "I am " + Age + " years old. ";
 
-        if (Student)
+
+    /// <summary>
+    /// Prints the students name, age and whether they are a studnet at
+    /// Davidson College.
+    /// </summary>
+    /// <param name="isStudent"> Boolean representing if the person is a student
+    /// at davidson college</param>
+    /// <param name="Age"> Integer representing the age of the student</param>
+    /// <param name="Name">String representing thename of the student</param>
+    /// <returns>A statement describing the student.</returns>
+    string StudentDebug(bool isStudent, string Name, int Age)
+    {
+        string Statement;
+        Statement = string.Format("My name is {0}. I am {1} years old", Name, Age);
+
+        if (isStudent)
         {
-            Statement += "I am a student at Davidsn College!";
+            Statement += " and I am a student at Davidsn College!";
 
         }
         else
         {
-            Statement += "I am NOT a student at Davidson College!";
+            Statement += " and I am NOT a student at Davidson College!";
         }
 
-        Debug.Log(Statement);
+
+        return (Statement);
+    }
+
+    /// <summary>
+    /// Gives the amount of years remaining for a student in a traditional 4 year college.
+    /// </summary>
+    /// <param name="YearsInCollege">Integer representing the total amount of years a student has been in college</param>
+    /// <returns>The amount of years left in college</returns>
+
+    int YearsUntilGraduation(int YearsInCollege)
+    {
+        int YearsLeft = YearsOfCollege - YearsInCollege;
+        
+
+        return YearsLeft;
     }
 
     // Update is called once per frame
