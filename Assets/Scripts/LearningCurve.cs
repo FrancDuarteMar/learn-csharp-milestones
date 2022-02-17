@@ -83,7 +83,7 @@ public class LearningCurve : MonoBehaviour
 
 
 
-    int 
+     
 
     // Update is called once per frame
     void Update()
