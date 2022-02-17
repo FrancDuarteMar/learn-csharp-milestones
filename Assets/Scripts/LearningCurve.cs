@@ -14,12 +14,14 @@ public class LearningCurve : MonoBehaviour
     public bool Student;
     private int YearsOfCollege = 4;
     public int YearsAtCollege;
+    public bool Worker;
+
     [SerializeField] string CollegeName = "Davidson College";
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(StudentDebug(Student,StudentName, StudentAge));
+        Debug.Log(StudentDebug(Student,StudentName, StudentAge,Worker));
         Debug.Log(string.Format("I have {0} year/s left of college.", YearsUntilGraduation(YearsAtCollege)));
     }
 
@@ -33,15 +35,28 @@ public class LearningCurve : MonoBehaviour
     /// <param name="Age"> Integer representing the age of the student</param>
     /// <param name="Name">String representing thename of the student</param>
     /// <returns>A statement describing the student.</returns>
-    string StudentDebug(bool isStudent, string Name, int Age)
+    string StudentDebug(bool isStudent, string Name, int Age, bool IsWorker)
     {
         string Statement;
         Statement = string.Format("My name is {0}. I am {1} years old", Name, Age);
 
         if (isStudent)
         {
-            Statement += " and I am a student at "+ CollegeName + " !";
+            if (!IsWorker)
+            {
+                Statement += " and I am a student at " + CollegeName + " !";
 
+            }
+            else
+            {
+                Statement += " and I am a student at " + CollegeName + "and a worker!";
+
+            }
+
+        }
+        else if (IsWorker)
+        {
+            Statement += " and I am a worker!";
         }
         else
         {
@@ -65,6 +80,10 @@ public class LearningCurve : MonoBehaviour
 
         return YearsLeft;
     }
+
+
+
+    int 
 
     // Update is called once per frame
     void Update()
