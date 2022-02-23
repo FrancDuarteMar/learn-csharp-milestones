@@ -81,21 +81,21 @@ Diving into Variables, Types, and Methods (38–64)
 ## Chapter 4
 Control Flow and Collection Types (65–93)
 
-- [ ] Update Assets/Scripts/LearningCurve.cs
+- [X] Update Assets/Scripts/LearningCurve.cs
 	- [X] Conditionals
 		- [X] Write `if`, `else if`, and `else` statements
 		- [X] Test for `true` and `!true` in a conditional
 		- [X] Write a nested `if` statement
 		- [X] Write a `switch` statement
-	- [ ] Collections
-		- [X] ✏️ What will `arr[1]` return from this array `int[] arr = {'red','green','blue'};` ? : **If it was coded correctly, it would return 'green' or whatever item is in the same position as 'green'. The way its coded, an error is prodced because 'red','green' and 'blue' are all strings not integers are specified.**
+	- [X] Collections
+		- [X] ✏️ What will `arr[1]` return from this array `int[] arr = {'red','green','blue'};` ? : **If it was coded correctly, it would return 'green' or whatever item is in the same position as 'green'. The way its coded, an error is produced because 'red','green' and 'blue' are all strings not integers as specified.**
 		- [X] Write an Array of the type `int[]`
-		- [ ] Write a List of the type `List<string>`
-		- [ ] Write a Dictionary of the type `Dictionary<string, int>`
-	- [ ] Loops
-		- [ ] Use a `for` loop to print a specific index of a `List<string>`
-		- [ ] Use a `foreach` loop to print all indexes of a `List<string>`
-		- [ ] Use a `foreach` loop to print the `KeyValuePair.Key` and `KeyValuePair.Value` of all indexes of a `Dictionary<string, int>`
+		- [X] Write a List of the type `List<string>`
+		- [X] Write a Dictionary of the type `Dictionary<string, int>`
+	- [X] Loops
+		- [X] Use a `for` loop to print a specific index of a `List<string>`
+		- [X] Use a `foreach` loop to print all indexes of a `List<string>`
+		- [X] Use a `foreach` loop to print the `KeyValuePair.Key` and `KeyValuePair.Value` of all indexes of a `Dictionary<string, int>`
 
 
 

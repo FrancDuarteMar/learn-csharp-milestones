@@ -16,6 +16,7 @@ public class LearningCurve : MonoBehaviour
     public string weaponType = "Longsword";
 
 
+
     /*
      * My initial decalartion of variables. 
      * They all currently have my own information. 
@@ -51,6 +52,22 @@ public class LearningCurve : MonoBehaviour
     void Chapter4()
     {
         int[] topPlayerScores = { 713, 549, 984 };
+        int score = topPlayerScores[1];
+        topPlayerScores[1] = 1001;
+
+        List<string> QuestPartyMembers = new List<string>()
+        {
+            "Grim the Barbarian",
+            "Merlin the Wise",
+            "Sterling the Knight"
+        };
+
+        Dictionary<string, int> ItemInventory = new Dictionary<string, int>()
+        {
+            {"Potion",5},
+            {"Antidote", 7},
+            {"Aspirin", 1}
+        };
 
         Thievery();
 
@@ -75,7 +92,7 @@ public class LearningCurve : MonoBehaviour
 
             else
             {
-                Debug.Log("Fists aren't gonig to work against armor...");
+                Debug.Log("Fists aren't going to work against armor...");
             }
         }
 
@@ -105,7 +122,25 @@ public class LearningCurve : MonoBehaviour
             }
         }
 
+        Debug.LogFormat("Party Members: {0}", QuestPartyMembers.Count);
 
+        for(int i = 0; i< QuestPartyMembers.Count; i++)
+        {
+            if(i == 2)
+            {
+                Debug.Log("Party Member at index " + i.ToString() +" "+ QuestPartyMembers[i]);
+            }
+        }
+
+        foreach(string member in QuestPartyMembers)
+        {
+            Debug.LogFormat("{0} - Here!",member);
+        }
+
+        foreach (KeyValuePair<string,int> kvp in ItemInventory)
+        {
+            Debug.LogFormat("Item: {0} - Value {1}", kvp.Key, kvp.Value);
+        }
 
        
     }
