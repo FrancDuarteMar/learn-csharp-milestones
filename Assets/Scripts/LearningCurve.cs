@@ -150,7 +150,7 @@ public class LearningCurve : MonoBehaviour
     public void SelfCode()
     {
         /// <summary>
-        /// Prints the students name, age and whether they are a studnet at
+        /// Prints the students name, age and whether they are a student at
         /// Davidson College.
         /// </summary>
         /// <param name="isStudent"> Boolean representing if the person is a student
