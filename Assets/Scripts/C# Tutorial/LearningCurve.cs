@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class LearningCurve : MonoBehaviour
 {
-
-    public bool Chapter4Active = false;
     public bool SelfActive = false;
+    public bool Chapter4Active = false;
+    public bool Chapter5Active = false;
+
 
     public bool hasDungeonKey = false;
     public int CurrentGold = 32;
@@ -15,6 +16,9 @@ public class LearningCurve : MonoBehaviour
     public bool weaponEquipped = true;
     public string weaponType = "Longsword";
 
+    public Transform CamTransform;
+    public GameObject DirectionLight; 
+    public Transform LightTransform;
 
 
     /*
@@ -45,7 +49,17 @@ public class LearningCurve : MonoBehaviour
 
             Chapter4();
         }
-        
+
+        if (Chapter5Active)
+        {
+            Chapter5();
+            CamTransform = this.GetComponent<Transform>();
+            Debug.Log(CamTransform.localPosition);
+            // DirectionLight = GameObject.Find("Directional Light");
+            LightTransform = DirectionLight.GetComponent<Transform>();
+            Debug.Log(LightTransform.localPosition);
+            GameObject.Find("Directional Light").GetComponent<Transform>();
+        }
 
     }
 
@@ -153,7 +167,7 @@ public class LearningCurve : MonoBehaviour
         /// Prints the students name, age and whether they are a student at
         /// Davidson College.
         /// </summary>
-        /// <param name="isStudent"> Boolean representing if the person is a student
+        /// <param name= "isStudent"> Boolean representing if the person is a student
         /// at davidson college</param>
         /// <param name="Age"> Integer representing the age of the student</param>
         /// <param name="Name">String representing thename of the student</param>
@@ -233,9 +247,39 @@ public class LearningCurve : MonoBehaviour
 
    
 
+    void Chapter5()
+    {
+        CharacterScript hero = new CharacterScript();
+        CharacterScript heroine = new CharacterScript("Agatha");
+        CharacterScript hero2 = new CharacterScript();
+        Weapon huntingBow = new Weapon("Hunting Bow", 105);
+        Weapon warBow = huntingBow;
+        
 
 
-     
+        hero2 = hero;
+        hero2.name = "Sir Krane the Brave";
+
+        warBow.name = "War Bow";
+        warBow.damage = 155;
+
+
+
+        hero.PrintStatsInfo();
+        heroine.PrintStatsInfo();
+        hero2.PrintStatsInfo();
+        huntingBow.PrintWeaponStats();
+        warBow.PrintWeaponStats();
+
+
+
+        Paladin knight = new Paladin("Sir Aruthur", huntingBow);
+        knight.PrintStatsInfo();
+
+
+    }
+
+
 
     // Update is called once per frame
     void Update()

@@ -103,49 +103,49 @@ Control Flow and Collection Types (65–93)
 Working with Classes, Structs, and OOP (94–119)
 
 - Classes
-	- [ ] ✏️ Explain the difference between reference and value type variables: **??**
-	- [ ] Create Assets/Scripts/Character.cs
-		- [ ] Create a `Character` class
-		- [ ] Create `string` and `int` fields inside the Character class
-		- [ ] Create a `Character()` constructor and populate the above fields with its parameters
-	- [ ] Update Assets/Scripts/LearningCurve.cs
-		- [ ] Instantiate two new Character objects `hero` and `heroine` from the `Character` class
-		- [ ] Print out each characters data
-- [ ] Structs
-	- [ ] Update Assets/Scripts/Character.cs
-		- [ ] Add a `Weapon` struct
-		- [ ] Create `string` and `int` fields inside the Weapon struct
-		- [ ] Create a `Weapon()` constructor and populate the above fields with its parameters
-	- [ ] Update Assets/Scripts/LearningCurve.cs
-		- [ ] Instantiate two new Weapon objects `huntingBow` and `warBow` from the `Weapon` struct
-		- [ ] Print out each weapons' data
+	- [X] ✏️ Explain the difference between reference and value type variables: **Value type variables are given values directly while reference type variable point to a different variable or address/location in memory in order to get its value.**
+	- [X] Create Assets/Scripts/Character.cs
+		- [X] Create a `Character` class--- Called `CharacterScript` because of conflicting names with the Halpern book.
+		- [X] Create `string` and `int` fields inside the Character class
+		- [X] Create a `Character()` constructor and populate the above fields with its parameters
+	- [X] Update Assets/Scripts/LearningCurve.cs
+		- [X] Instantiate two new Character objects `hero` and `heroine` from the `Character` class
+		- [X] Print out each characters data
+- [X] Structs
+	- [X] Update Assets/Scripts/Character.cs
+		- [X] Add a `Weapon` struct
+		- [X] Create `string` and `int` fields inside the Weapon struct
+		- [X] Create a `Weapon()` constructor and populate the above fields with its parameters
+	- [X] Update Assets/Scripts/LearningCurve.cs
+		- [X] Instantiate two new Weapon objects `huntingBow` and `warBow` from the `Weapon` struct
+		- [X] Print out each weapons' data
 - Child classes
-	- [ ] Update Assets/Scripts/Character.cs
-		- [ ] Add a `Paladin` child class of `Character`
-		- [ ] Create a `Weapon` field inside the Paladin class
-		- [ ] Create a `Paladin()` constructor that calls the `base()` constructor. Populate the weapon in a parameter
-	- [ ] Update Assets/Scripts/LearningCurve.cs
-		- [ ] Instantiate a new Paladin object `knight` from the Paladin class
-		- [ ] Print the Paladin's name and weapon by overriding `PrintStatsInfo` in the base class
+	- [X] Update Assets/Scripts/Character.cs
+		- [X] Add a `Paladin` child class of `Character`
+		- [X] Create a `Weapon` field inside the Paladin class
+		- [X] Create a `Paladin()` constructor that calls the `base()` constructor. Populate the weapon in a parameter
+	- [X] Update Assets/Scripts/LearningCurve.cs
+		- [X] Instantiate a new Paladin object `knight` from the Paladin class
+		- [X] Print the Paladin's name and weapon by overriding `PrintStatsInfo` in the base class
 - Referencing objects
-	- [ ] Update Assets/Scripts/LearningCurve.cs
-		- [ ] Store a reference to the current game object's (Main Camera) `Transform` component using `GetComponent<>()`
-		- [ ] Log a reference to the `localPosition` field of the Main Camera's `Transform`
-		- [ ] Store a reference to the Light `GameObject` using `GameObject.Find()`
-		- [ ] Store a reference to the Light's `Transform` component using `GetComponent<>()`
-		- [ ] Log a reference to the `localPosition` field of the Light's `Transform`
+	- [X] Update Assets/Scripts/LearningCurve.cs
+		- [X] Store a reference to the current game object's (Main Camera) `Transform` component using `GetComponent<>()`
+		- [X] Log a reference to the `localPosition` field of the Main Camera's `Transform`
+		- [X] Store a reference to the Light `GameObject` using `GameObject.Find()`
+		- [X] Store a reference to the Light's `Transform` component using `GetComponent<>()`
+		- [X] Log a reference to the `localPosition` field of the Light's `Transform`
 
 
 
 ## Chapter 6
 Getting Your Hands Dirty with Unity (120–148)
 
-- [ ] Use primitive cubes and move, rotate, and scale tools to create a level or "world" in Unity
-- [ ] Add materials to primitives in Unity to change their color
-- [ ] Use parenting and "empty objects" in the Hierarchy tab to organize your project
-- [ ] Create, update, and use prefab game objects
-- [ ] Create timeline animations by recording keyframes and editing curves in Unity
-- [ ] Add and edit a particle system to a game object in Unity
+- [X] Use primitive cubes and move, rotate, and scale tools to create a level or "world" in Unity
+- [X] Add materials to primitives in Unity to change their color
+- [X] Use parenting and "empty objects" in the Hierarchy tab to organize your project
+- [X] Create, update, and use prefab game objects
+- [X] Create timeline animations by recording keyframes and editing curves in Unity
+- [X] Add and edit a particle system to a game object in Unity
 
 
 
