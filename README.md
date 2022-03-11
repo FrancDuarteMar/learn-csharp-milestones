@@ -153,19 +153,19 @@ Getting Your Hands Dirty with Unity (120–148)
 ## Chapter 7
 Movement, Camera Controls, and Collisions (149–175)
 
-- [ ] Movement
-	- [ ] Understand the difference between a "position vector" and a "direction vector"
-	- [ ] Capture keyboard input in C#
-	- [ ] Move and rotate a game object using `Translate()` and `Rotate()` with direction vectors
-- [ ] Camera Controls
-	- [ ] Add a script to the main camera that follows and looks at the player
-- [ ] Physics and Collisions
-	- [ ] Use `FixedUpdate()` to control game objects using Unity's physics engine
-	- [ ] Apply physics forces to a game object RigidBody using `MovePosition()`
-	- [ ] ✏️ Q: Will a [collision detection](https://docs.unity3d.com/Manual/CollidersOverview.html) occur when a Kinematic Rigidbody Collider touches a Static Collider? : **??**
-	- [ ] Use `OnCollisionEnter()` to check if a game object has run into another collider
-	- [ ] Use `Destroy()` to remove a game object from the scene
-	- [ ] Use `OnTriggerEnter()` and `OnTriggerExit()` to detect when two colliders start and stop touching
+- [X] Movement
+	- [X] Understand the difference between a "position vector" and a "direction vector"
+	- [X] Capture keyboard input in C#
+	- [X] Move and rotate a game object using `Translate()` and `Rotate()` with direction vectors
+- [X] Camera Controls
+	- [X] Add a script to the main camera that follows and looks at the player
+- [X] Physics and Collisions
+	- [X] Use `FixedUpdate()` to control game objects using Unity's physics engine
+	- [X] Apply physics forces to a game object RigidBody using `MovePosition()`
+	- [X] ✏️ Q: Will a [collision detection](https://docs.unity3d.com/Manual/CollidersOverview.html) occur when a Kinematic Rigidbody Collider touches a Static Collider? : **No**
+	- [X] Use `OnCollisionEnter()` to check if a game object has run into another collider
+	- [X] Use `Destroy()` to remove a game object from the scene
+	- [X] Use `OnTriggerEnter()` and `OnTriggerExit()` to detect when two colliders start and stop touching
 
 
 
