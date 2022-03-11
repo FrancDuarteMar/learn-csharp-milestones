@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6909222265884074505}
   - component: {fileID: 6909222265884074506}
   - component: {fileID: 5400167542386218934}
+  - component: {fileID: 1188510888909165372}
   m_Layer: 10
   m_Name: EnemyObject
   m_TagString: Player
@@ -73,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2118766551
-  m_SortingLayer: 4
+  m_SortingLayerID: -441946211
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -1009936936, guid: 23455b25251df4f31aa4803733eb68ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -120,7 +121,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.005824432, y: -0.10769811}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -131,7 +132,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
+  m_Size: {x: 0.23126143, y: 0.54054886}
   m_EdgeRadius: 0
 --- !u!50 &5400167542386218934
 Rigidbody2D:
@@ -147,10 +148,26 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0
+  m_AngularDrag: 0.5
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &1188510888909165372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6909222265884074510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a07f59eb6ef3fa84ca2a6342f3ee4961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHitPoints: 2
+  startingHitPoints: 2
+  characterCategory: 1
+  damageStrength: 1
