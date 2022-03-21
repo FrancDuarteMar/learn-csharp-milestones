@@ -10,18 +10,10 @@ public class MovementController : MonoBehaviour
 
     Animator animator;
 
-    string animationState = "AnimationState";
+    
     Rigidbody2D rb2D;
 
-    enum CharStates
-    {
-        walkEast = 1,
-        walkSouth = 2,
-        walkWest = 3,
-        walkNorth = 4,
-
-        idleSouth = 5
-    }
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -53,33 +45,15 @@ public class MovementController : MonoBehaviour
 
     private void UpdateState()
     {
-        if(movement.x > 0)
-        {
-            
-            animator.SetInteger(animationState, (int)CharStates.walkEast);
+        if(Mathf.Approximately(movement.x,0) && Mathf.Approximately(movement.y,0)){
+            animator.SetBool("isWalking",false);
         }
-        else if (movement.x < 0)
-        {
-            animator.SetInteger(animationState, (int)
-            CharStates.walkWest);
-        }
-        else if (movement.y > 0)
-        {
-            animator.SetInteger(animationState, (
-            int)
-            CharStates.walkNorth);
-        }
-        else if (movement.y < 0)
-        {
-            animator.SetInteger(animationState, (int)
-            CharStates.walkSouth);
+        else{
+            animator.SetBool("isWalking",true);
         }
 
-        else
-        {
-            animator.SetInteger(animationState, (int)
-            CharStates.idleSouth);
-        }
+        animator.SetFloat("xDir",movement.x);
+        animator.SetFloat("yDir",movement.y);
     }
 }
 

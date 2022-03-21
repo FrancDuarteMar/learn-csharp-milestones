@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CanBePickedUp
   - VirtualCamera
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -13,12 +14,12 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - Blocking
   - Consumables
   - Enemies
-  - 
+  - Ammo
   - 
   - 
   - 
